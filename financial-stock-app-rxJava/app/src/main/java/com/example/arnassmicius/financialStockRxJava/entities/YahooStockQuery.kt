@@ -1,6 +1,9 @@
 package com.example.arnassmicius.financialStockRxJava.entities
 
-class YahooStockQuery {
+import java.util.*
 
-    // PSL 73
-}
+data class YahooStockQuery(
+        val count: Int,
+        val created: Date,
+        val results: YahooStockResults
+)
